@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CorpFlow</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Bem-vindo ao CorpFlow</h1>
+    <div class="board">
+        <div class="column" id="a-fazer">
+            <h2>A fazer</h2>
+            <form id="form-tarefa">
+                <input type="text" id="nome" placeholder="Nome do empregado" required maxlength="50">
+                <textarea id="descricao" placeholder="Descrição da tarefa" required maxlength="150"></textarea>
+                <input type="date" id="prazo" required>
+                <button type="submit">Concluir</button>
+            </form>
+        </div>
+        <div class="column" id="verificar">
+            <h2>Verificar</h2>
+        </div>
+        <div class="column" id="concluida">
+            <h2>Concluída</h2>
+        </div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
